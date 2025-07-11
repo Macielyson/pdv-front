@@ -1,0 +1,59 @@
+
+body,
+html {
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--primary);
+}
+
+/*filhos direto*/
+header>div {
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px 20px;
+}
+
+header>div:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+header img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+/*que nao tem a classe mdi*/
+header span:not(.mdi) {
+    margin-bottom: -10px;
+}
+
+/*que tem a classe mdi*/
+header span.mdi {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+header small {
+    display: block;
+    margin-top: -20px;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-page {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 12px;
+}
